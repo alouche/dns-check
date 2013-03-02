@@ -10,7 +10,7 @@ CLI base DNS check propagation tool
 
 * While the tool works - it was hacked in an hour or so with the only purpose in mind to get some work done. That being said, there are still a couple of TODO/FIXME lurking in the code and likely a couple of refactoring needed... and of course, some test units. I am releasing it in the hope it is useful to someone else.
 
-* The upstream json feed contains sometimes empty records for city and country - NN is used for specified "No Name"
+* The upstream json feed contains sometimes empty records for city and country - NN is used as an acronym for "No Name"
 
 ## Getting started
 
