@@ -4,6 +4,8 @@
 
 CLI base DNS check propagation tool
 
+![Image](http://farm9.staticflickr.com/8086/8521646535_3c2b6376cd_b_d.jpg)
+
 ### Note
 
 * While the tool works - it was hacked in an hour or so with the only purpose in mind to get some work done. That being said, there are still a couple of TODO/FIXME lurking in the code and likely a couple of refactoring needed... and of course, some test units. I am releasing it in the hope it is useful to someone else.
@@ -39,7 +41,7 @@ Usage: dns-check [options] [domain]
     Guatemala/El Salvador|74.125.137.139
     
 
-    $ dns-check google.com --location Berlin --show-ns<br>
+    $ dns-check google.com --location Berlin --show-ns
     Berlin|173.194.70.101|194.77.8.1
     Berlin|173.194.70.138|alhazred.hsd.de
     Berlin|173.194.70.113|192.166.192.2
