@@ -1,0 +1,18 @@
+#!/usr/bin/env ruby
+#-*- encoding: utf-8 -*-
+#
+
+STDOUT.sync = true
+
+$PROG_PATH = File.expand_path(File.dirname(__FILE__) + '/..')
+$LOAD_PATH.unshift($PROG_PATH + '/lib') if File.directory?($PROG_PATH + '/lib') && !$LOAD_PATH.include?($PROG_PATH + '/lib')
+
+require 'dns-check'
+
+begin
+  DNSCheck::CLI.instance.run
+rescue => e
+  raise e if $DEBUG
+  STDERR.puts e.message
+  STDERR.puts e.backtrace.join("\n") if $DEBUG
+end
