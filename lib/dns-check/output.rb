@@ -30,7 +30,7 @@ module DNSCheck
       if msg[3] && COUNTRY_CODES.has_key?(msg[3])
         #FIXME cheap workaround around frozen string
         msg[0] = msg[0].dup
-        msg[0].prepend(COUNTRY_CODES[msg[3]] + '/')
+        msg[0].prepend(msg[3].resolve_country_code + '/')
       end
 
       print msg[0] + "|" + msg[1]
