@@ -2,6 +2,7 @@
 
 [![Code Climate](https://codeclimate.com/github/alouche/dns-check.png)](https://codeclimate.com/github/alouche/dns-check)
 [![Dependency Status](https://gemnasium.com/alouche/dns-check.png)](https://gemnasium.com/alouche/dns-check)
+[![Gem Version](https://badge.fury.io/rb/dns-check.png)](http://badge.fury.io/rb/dns-check)
 
 CLI base DNS check propagation tool
 
