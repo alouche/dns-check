@@ -1,6 +1,7 @@
 #dns-check                                                                                                                                                                                                                                   
 
 [![Code Climate](https://codeclimate.com/github/alouche/dns-check.png)](https://codeclimate.com/github/alouche/dns-check)
+[![Dependency Status](https://gemnasium.com/alouche/dns-check.png)](https://gemnasium.com/alouche/dns-check)
 
 CLI base DNS check propagation tool
 
