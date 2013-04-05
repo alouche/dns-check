@@ -14,6 +14,10 @@ CLI base DNS check propagation tool
 
 * The upstream json feed contains sometimes empty records for city and country - NN is used as an acronym for "No Name"
 
+## Requirements
+
+Ruby 1.9.3
+
 ## Getting started
 
 * gem install dns-check
