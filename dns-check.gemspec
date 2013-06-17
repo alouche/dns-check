@@ -16,6 +16,7 @@ Gem::Specification.new do |gem|
   gem.add_dependency 'public_suffix', '~> 1.2.0'
   gem.add_dependency 'eventmachine', '~> 1.0.1'
   gem.add_dependency 'em-resolv-replace', '~> 1.1.3'
+  gem.add_dependency 'json', '~> 1.8.0' if RUBY_VERSION < '1.9'
   gem.add_development_dependency 'rspec', '~> 2.13.0'
 
   gem.files         = `git ls-files`.split($/)
