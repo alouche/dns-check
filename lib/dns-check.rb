@@ -1,6 +1,5 @@
 #-*- encoding: utf-8 -*-
 
-require 'rubygems' if RUBY_VERSION < '1.9'
 require 'uri'
 require 'json'
 require 'time'
