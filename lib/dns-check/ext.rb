@@ -3,6 +3,12 @@
 
 class String
 
+  COLORS = {
+    :red      => 31,
+    :green    => 32,
+    :yellow   => 33,
+  }
+
   def capitalize_all
     self.split(' ').map do |word|
       word.capitalize
@@ -17,16 +23,13 @@ class String
     DNSCheck::COUNTRY_CODES.invert[self]
   end
 
-  def colorize_to(color_name)
-    case color_name
-    when 'red'
-      color_code = 31
-    when 'green'
-      color_code = 32
-    else
-      color_code = 33
-    end
+  def colorize(color_name)
+    self.scan(REGEXP_PATTERN).inject("") do |str, match|
 
-    "\e[#{color_code}m#{self}\e[0m"
+    end
+  end
+
+  def colorize_to(color_name)
+    "\e[#{COLORS[color_name]}m#{self}\e[0m"
   end
 end

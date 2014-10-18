@@ -19,12 +19,12 @@ module DNSCheck
 
     def lookup hostname
       Timeout::timeout(@timeout) do
-        @query.getaddress(hostname).to_s.colorize_to('green')
+        @query.getaddress(hostname).to_s.colorize_to(:green)
       end
     rescue Timeout::Error
-      "Nameserver Timeout".colorize_to('red')
+      "Nameserver Timeout".colorize_to(:red)
     rescue => e
-      e.message.colorize_to('red')
+      e.message.colorize_to(:red)
     end
   end
 
