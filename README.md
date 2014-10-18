@@ -25,7 +25,7 @@ Ruby 1.9.3
 
 ## Usage
 Usage: dns-check [options] [domain]
-
+```bash
     Options:
     -l, --location   [name]          Location can either be a country or city
     -t, --timeout    [sec]           DNS Query timeout (Default: 5s)
@@ -35,40 +35,44 @@ Usage: dns-check [options] [domain]
         --debug
     -v, --version                    Show version
     -h, -?, --help                   Show this message
-
+```
 ### Examples
-<br>
-
+```bash
     $ dns-check google.com --records 5
     Hong Kong/Central District|74.125.128.100
     Taiwan/NN|74.125.31.138
     Saudi Arabia/NN|173.194.35.96
     Afghanistan/NN|173.194.72.139
     Guatemala/El Salvador|74.125.137.139
-    
+```
 
+```bash
     $ dns-check google.com --location Berlin --show-ns
     Berlin|173.194.70.101|194.77.8.1
     Berlin|173.194.70.138|alhazred.hsd.de
     Berlin|173.194.70.113|192.166.192.2
+```
 
-
+```bash
     $ dns-check google.com --records 5 --location US --show-ns
     Longmont|74.125.225.195|209.97.224.3
     Burlington|74.125.226.228|64.17.101.12
     Romney|74.125.140.138|resolve01.rmny.wv.frontiernet.net
     Deerfield Beach|74.125.229.238|216.242.0.15
     North Attleboro|173.194.34.102|207.180.2.6
+```
 
-
+```bash
     $ dns-check google.com --records 5 --location US
     El Paso|173.194.46.5
     Atlanta|74.125.228.34
     Greenville|74.125.227.128
     Newark|74.125.228.64
     Baltimore|74.125.228.34
+```
 
-
+```bash
     $ dns-check google.com --records 2 --location Atlanta --show-ns
     Atlanta|173.194.37.67|ns.echina.com
     Atlanta|74.125.137.100|64.94.1.1
+```
