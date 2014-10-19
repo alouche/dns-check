@@ -59,6 +59,10 @@ module DNSCheck
           opts[:show_ns] = true
         end
 
+        o.on '--no-recursion', 'Disable recursion' do
+          opts[:no_recursion] = true
+        end
+
         o.on '--sep [sep]', String, 'Set separator (default: |)' do |sep|
           opts[:sep] = sep
         end

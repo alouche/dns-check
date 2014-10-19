@@ -17,6 +17,7 @@ module DNSCheck extend self
       :indice_location  => URI.parse('http://public-dns.tk/nameservers.json'),
       :indice_store     => "#{$PROG_PATH}/db/indice",
       :show_ns          => false,
+      :no_recursion     => false,
       :size             => 10,
       :sep              => '|'
     }
