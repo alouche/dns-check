@@ -28,8 +28,10 @@ Usage: dns-check [options] [domain]
     -l, --location   [name]          Location can either be a country or city
     -t, --timeout    [sec]           DNS Query timeout (Default: 5s)
         --records    [size]          Number of nameservers to select (default: 10)
+        --sep        [sep]           Set separator (default: |)
         --show-ns                    Show nameservers
         --update                     Perform indice update
+        --no-recursion               Disable recursion
         --debug
     -v, --version                    Show version
     -h, -?, --help                   Show this message

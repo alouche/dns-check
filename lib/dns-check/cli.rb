@@ -43,28 +43,28 @@ module DNSCheck
         o.separator ''
         o.separator 'Options:'
 
-        o.on '-l', '--location [name]', String, 'Location can either be a country or city' do |loc|
+        o.on '-l', '--location   [name]', String, 'Location can either be a country or city' do |loc|
           opts[:location] = loc
         end
 
-        o.on '-t', '--timeout [sec]', Integer, 'DNS Query timeout (Default: 5s)' do |sec|
+        o.on '-t', '--timeout    [sec]', Integer, 'DNS Query timeout (Default: 5s)' do |sec|
           opts[:timeout] = sec
         end
 
-        o.on '--records [size]', Integer, 'Number of nameservers to select (default: 10)' do |size|
+        o.on '--records    [size]', Integer, 'Number of nameservers to select (default: 10)' do |size|
           opts[:size] = size
         end
 
-        o.on '--show-ns', 'Show nameservers' do
-          opts[:show_ns] = true
+        o.on '--sep        [sep]', String, 'Set separator (default: |)' do |sep|
+          opts[:sep] = sep
         end
 
         o.on '--no-recursion', 'Disable recursion' do
           opts[:no_recursion] = true
         end
 
-        o.on '--sep [sep]', String, 'Set separator (default: |)' do |sep|
-          opts[:sep] = sep
+        o.on '--show-ns', 'Show nameservers' do
+          opts[:show_ns] = true
         end
 
         o.on '--update', 'Perform indice update' do
