@@ -1,6 +1,7 @@
 #-*- encoding: utf-8 -*-
 
 require 'eventmachine'
+
 require 'dns-check/output'
 require 'dns-check/dns'
 require 'dns-check/core'
@@ -38,9 +39,7 @@ module DNSCheck
             resolv.nameservers = ns
 
             resolved_ip = resolv.lookup(hostname)
-
             output_msg = [e, resolved_ip, ns.sample, c]
-
             output.insert do
               output.print_msg output_msg
             end
