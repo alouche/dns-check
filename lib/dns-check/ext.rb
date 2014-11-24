@@ -20,7 +20,7 @@ class String
   end
 
   def resolve_country_name
-    DNSCheck::COUNTRY_CODES.invert[self]
+    DNSCheck::COUNTRY_CODES.invert[self] || "XX"
   end
 
   def colorize(color_name)
